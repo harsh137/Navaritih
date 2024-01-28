@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css'; */
+
+
+
+*{
+    font-family: 'poppins', sans-serif;
+    
+}
+/* Hide Scrollbar From chrome*/
+*::-webkit-scrollbar{
+    display: none;
+}
+*{
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+
+
+
+/* .logo{
+    @apply  
+  } */
+
+  .nav{
+    box-shadow:  0 5px 15px rgb(134,128,128);
+  }
+  .hero{
+    background-image: url(/bg/background.png);
+    background-size: fill;
+    /* background-position: top 25% 0; */
+  }
+  .Overview{
+    border-radius: 27px;
+    background: #ffffff;
+    box-shadow:  14px 14px 21px #666666,
+             -14px -14px 21px #ffffff;
+  }
+
+ 
+ 
+  .collab{
+    
+      background-image: url(/bg/background.png);
+      background-size: auto;
+      background-blend-mode: lighten;
+  }
+
+  .mission{
+    border-radius: 51px;
+    background: white;
+    box-shadow:  12px 12px 33px #87919f,
+                 -12px -12px 33px #ebfbff;
+  }
+  .mission:hover{
+    border-radius: 51px;
+background: #f0f0ef;
+box-shadow:  12px 12px 33px #7c8899,
+             -12px -12px 33px #d8ecff;
+  }
+
+/* ANOUNSSMENT */
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carouselee {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.slidee {
+  flex: 0 0 100%;
+}
+
+  .about-us {
+    @apply h-screen w-full px-0 py-[12%] ;
+    background: #b9c6da;
+  }
+  
+  .pic {
+    @apply h-auto w-[40%];
+  }
+
+  .about {
+    @apply w-[100vhx] max-w-[85%] flex items-center justify-around mx-auto my-0;
+  }
+  .text {
+    @apply w-[540px];
+  }
+  .text h2 {
+    @apply text-[90px] font-semibold text-[#ffa912] mb-2.5;
+  }
+  .text h5 {
+    @apply text-[22px] font-medium text-white mb-5;
+  }
+  span {
+    @apply text-[#f8f8f8];
+  }
+  .text p {
+    @apply text-lg leading-[25px] tracking-[1px] text-white;
+  }
+  
+  /* //achivment */
+
+
+.blog-card {
+  @apply absolute h-[370px] w-[95%] max-w-[850px] shadow-[0px_10px_50px_rgba(63,64,64,0.438)]  rounded-[25px];
+  background: #ebf1f7;
+}
+.inner-part {
+  @apply absolute flex h-[360px] items-center justify-center px-[15px] py-0;
+}
+#imgTap:checked ~ .inner-part {
+  @apply transition-[0.1s] duration-[ease-in] p-0;
+}
+.inner-part .img {
+  @apply h-[260px] w-[260px] shrink-0 overflow-hidden shadow-[2px_3px_15px_rgba(63,64,64,0.438)] rounded-[20px];
+}
+#imgTap:checked ~ .inner-part .img {
+  @apply h-[370px] w-[850px] z-[99] transition-[0.3s] duration-[0.2s] ease-[ease-in] mt-2.5;
+}
+.img img {
+  @apply h-full w-full object-cover cursor-pointer opacity-0 transition-[0.6s];
+}
+#tap-1:checked ~ .inner-part .img-1,
+#tap-2:checked ~ .inner-part .img-2,
+#tap-3:checked ~ .inner-part .img-3 {
+  @apply opacity-100 delay-[0.2s];
+}
+.content {
+  @apply w-[530px] opacity-0 transition-[0.6s] ml-[50px] pl-[35px] pr-5 py-0;
+}
+#imgTap:checked ~ .inner-part .content {
+  @apply hidden;
+}
+#tap-1:checked ~ .inner-part .content-1,
+#tap-2:checked ~ .inner-part .content-2,
+#tap-3:checked ~ .inner-part .content-3 {
+  @apply opacity-100 z-[100] delay-[0.3s] ml-0;
+}
+.content span {
+  @apply block text-[#7b7992] text-[22px] font-medium mb-[15px];
+}
+.content .title {
+  @apply text-3xl font-bold text-[#0d0925] mb-5;
+}
+
+
+.sliders {
+  @apply absolute -translate-x-2/4 z-[12] left-[65%] bottom-[25px];
+}
+#imgTap:checked ~ .sliders {
+  @apply hidden;
+}
+.sliders .tap {
+  @apply relative h-2.5 w-[50px] inline-flex cursor-pointer mx-[3px] my-0 rounded-[5px] before:absolute before:content-[''] before:h-full before:w-[-100%] before:transition-transform before:duration-[0.6s] before:origin-left before:rounded-[10px] before:scale-x-0 before:left-0 before:top-0;
+  background: #d9d9d9;
+}
+.sliders .tap:hover {
+  background: #cccccc;
+}
+.sliders .tap:before {
+  background: linear-gradient(140deg, #02256b 3%, #ffa912 74%);
+}
+input[type="radio"],
+input[type="checkbox"] {
+  @apply hidden;
+}
+#tap-1:checked ~ .sliders .tap-1:before,
+#tap-2:checked ~ .sliders .tap-2:before,
+#tap-3:checked ~ .sliders .tap-3:before {
+  @apply w-full scale-x-100;
+}
+.attribution {
+  @apply text-sm text-center bg-[hsl(240,5%,91%)] fixed w-full pt-2 pb-[5px] px-0 bottom-0 inset-x-0;
+}
+
+  
