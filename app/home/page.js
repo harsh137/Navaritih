@@ -69,7 +69,7 @@ export default function Home() {
 
                     <h4 className='text-[#2b3547] pb-4 text-5xl sm:3xl text-center pt-20 '>Welcome To</h4>
                     <h2 className="text-[#2b3547]  text-6xl sm:2xl text-center"> NAVARITIH </h2>
-                    <p className='text-[#2b3547]  text-4xl sm:2xl text-center pb-20'>&quot Where technology Ignites The World &quot</p>
+                    <p className='text-[#2b3547]  text-4xl sm:2xl text-center pb-20'>&quot; Where technology Ignites The World &quot;</p>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
 
                 </div>
@@ -280,7 +280,7 @@ export default function Home() {
                     </h2>
                 </div>
 
-                <Carousel  autoPlay infiniteLoop showArrows
+                <Carousel  autoPlay infiniteLoop showArrows showThumbs={false}
                 renderArrowPrev={(onClickHandler, hasPrev, label) =>
                     hasPrev && (
                         <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 } }>

@@ -19,7 +19,7 @@ export default function Navbar() {
                 <div>
                     <Link href="/" onClick={handleSamllScreenNavi}>
                         
-                        <img src="/Logo/VerticalTranlogo.png" className="m-3 h-20 w-5/6 md:h-20 md:w-5/6 xl:h-20 xl:w-5/6  ease-in" alt="logo"/>
+                        <img src="/Logo/trans.png" className="m-3 h-20 w-5/6 md:h-20 md:w-5/6 xl:h-20 xl:w-5/6" alt="logo"/>
                     </Link>
                 </div>
                 {/* Large Screen Navi */}

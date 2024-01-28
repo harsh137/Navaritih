@@ -31,7 +31,7 @@ export default function About() {
                     <div className="h-auto  md:w-[25%] sm:w-[80%] flex-col  border-2 border-black px-4 py-4 text-ellipsis  mission ">
                         <p className="text-center text-3xl font-semibold ">Mission</p>
                         <p className="text-wrap text-center font-Roboto text-ellipsis ">
-                        Navaritih forum is a dynamic platform that fosters intellectual exploration, collaboration, and innovation across diverse fields. It aims to create a vibrant community where researchers, scholars, and experts from various disciplines come together to engage in meaningful dialogue and contribute to society&aposs progress. Through organizing events, conferences, and seminars, Navaritih facilitates the dissemination of cutting-edge research, sparks interdisciplinary conversations, and inspires transformative solutions to global challenges.
+                        Navaritih forum is a dynamic platform that fosters intellectual exploration, collaboration, and innovation across diverse fields. It aims to create a vibrant community where researchers, scholars, and experts from various disciplines come together to engage in meaningful dialogue and contribute to society&apos;s progress. Through organizing events, conferences, and seminars, Navaritih facilitates the dissemination of cutting-edge research, sparks interdisciplinary conversations, and inspires transformative solutions to global challenges.
                         </p>
 
 
@@ -42,7 +42,7 @@ export default function About() {
                     <div className="h-auto  md:w-[25%] sm:w-[80%] flex-col  border-2 border-black px-4 py-4 text-ellipsis  mission ">
                         <p className="text-center text-3xl font-semibold ">Vision</p>
                         <p className="text-wrap text-center font-Roboto text-ellipsis ">
-                        Navaritih forum is a platform that fosters a dynamic exchange of ideas, bridging the gap between academia and industry. Through conferences, seminars, and workshops, it promotes interdisciplinary approaches to address contemporary challenges. Navaritih aims to be a catalyst for positive societal change, promoting research, dialogue, and knowledge dissemination on a global scale. The forum&aposs mission is to inspire innovation and foster collaborative ventures, fostering inclusivity and excellence.
+                        Navaritih forum is a platform that fosters a dynamic exchange of ideas, bridging the gap between academia and industry. Through conferences, seminars, and workshops, it promotes interdisciplinary approaches to address contemporary challenges. Navaritih aims to be a catalyst for positive societal change, promoting research, dialogue, and knowledge dissemination on a global scale. The forum&apos;s mission is to inspire innovation and foster collaborative ventures, fostering inclusivity and excellence.
                         </p>
 
 
