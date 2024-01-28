@@ -300,7 +300,7 @@ export default function Home() {
                     {announcement.map((announcement) => (
                         
                         
-                        <div key="announcement.id" className="bg-gray-200 mt-10 mb-20 h-[40vh] items-center justify-center">
+                        <div key="announcement.id" className="bg-gray-200 mt-10 mb-20 md:h-[40vh] sm:h-auto items-center justify-center">
                             <p className='text-3xl text-center text-gray-400 underline'>{announcement.title}</p>
                             <p className='text-l text-center text-gray-400'>{announcement.date}</p>
                             
@@ -337,7 +337,7 @@ export default function Home() {
 
                         </div>
                     </div>
-                    <div className='bg-white ml-32 xl:h-70 xl:w-70 h-60 w-60 sm:h-50 sm:w-50  rounded-full'>
+                    <div className='bg-white ml-20 xl:h-70 xl:w-70 h-60 w-60 sm:h-50 sm:w-50  rounded-full'>
                         <div className='border-2 border-black m-4 rounded-full'>
 
                             <img src="/Logo/TOver.png" alt="Image" className="w-full  object-cover rounded-full " />
