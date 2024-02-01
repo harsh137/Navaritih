@@ -132,7 +132,7 @@ export default function About() {
 
                     {
                         gallery.map((e) =>
-                            <div className="carousel-item md:w-1/5 sm:w-1/2 mr-5 ">
+                            <div key={e.id} className="carousel-item md:w-1/5 sm:w-1/2 mr-5 ">
                                 <img src="/Logo/TRANSPARENT_LOGO.png" className=" h-[90%] w-[90%] " alt="Drink" />
                             </div>
                         )}
@@ -192,7 +192,7 @@ export default function About() {
                 </div>
                 {
                     FAQ.map((e) =>
-                        <div tabIndex={e.id} className="collapse collapse-plus border border-base-300 mb-1   bg-[#faf7f5] hover:bg-[#f0f0ef]">
+                        <div key={e.id} tabIndex={e.id} className="collapse collapse-plus border border-base-300 mb-1   bg-[#faf7f5] hover:bg-[#f0f0ef]">
                             <div className="collapse-title text-xl font-medium font-mono">
                                 {e.title}
                             </div>
