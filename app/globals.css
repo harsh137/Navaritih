@@ -182,4 +182,8 @@ input[type="checkbox"] {
   @apply text-sm text-center bg-[hsl(240,5%,91%)] fixed w-full pt-2 pb-[5px] px-0 bottom-0 inset-x-0;
 }
 
-  
+.Image_shadow{
+  background: #f9f9f9;
+  box-shadow:  6px 6px 21px #97a8d040,
+             -6px -6px 21px #dbcff0;
+} 

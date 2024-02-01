@@ -36,11 +36,11 @@ export default function Navbar() {
                          ABOUT
                         </Link>
                     </li>
-                    <li className="mr-4 lg:mr-8  hover:text-[#CEFF00]">
+                    {/* <li className="mr-4 lg:mr-8  hover:text-[#CEFF00]">
                         <Link href="/department" className='font-Roboto'>
                          Departments
                         </Link>
-                    </li>
+                    </li> */}
                     
                     <li className="mr-4 lg:mr-8  hover:text-[#CEFF00]">
                         <Link href="/ourTeam" className='font-Roboto'>

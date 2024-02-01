@@ -1,4 +1,4 @@
-
+import { FaInstagram, FaFacebook , FaGithub } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -10,6 +10,19 @@ export default function Footer() {
                         {/* <header className="footer-title ml-4">Details</header> */}
 
                         <img src="/Logo/MainLogo.jpg" alt='Image' className="h-24 w-24 rounded-full" ></img>
+                        <div className= " bg-slate-600 mt-3 flex ">
+                            <button target="_blank " src="" className="pr-1">
+                            <FaInstagram  size={25} color="black"  className="hover:bg-slate-600"/>
+                            </button>
+                            <button target="_blank " src="" className="pr-1">
+                            <FaFacebook  size={25} color="black"  className="hover:bg-slate-600"/>
+                            </button>
+                            <button target="_blank " src="">
+                            <FaGithub  size={25} color="black"  className="hover:bg-slate-600"/>
+                            </button>
+                           
+                            </div>
+
 
                     </nav>
                     <nav className="text-white font-Baskervville">
@@ -19,7 +32,7 @@ export default function Footer() {
                         <a className="link link-hover font-serif font-medium text-base  ">Marketing</a>
                         <a className="link link-hover font-serif font-medium text-base ">Advertisement</a>
                     </nav>
-                    <nav className="text-white font-Baskervville">
+                    <nav className="text-white font-Baskervville sm:-mt-3">
                         <header className="footer-title">Company</header>
                         <a className="link link-hover font-serif font-medium text-base ">About us</a>
                         <a className="link link-hover font-serif font-medium text-base ">Contact</a>
@@ -44,8 +57,10 @@ export default function Footer() {
                                 <button className="btn btn-primary join-item font-serif font-medium text-base">Subscribe</button>
                             </div>
                             <div>
-                                <label className="cursor-pointer label">
-                                    <span className="label-text-alt font-serif font-medium text-base">Developed By:- <a href="https://www.linkedin.com/in/harsh-gupta137/" target='_blank' className="link link-hover">@harsh_gupta</a></span>
+                                <label className="cursor-pointer label flex flex-row ">
+                                    <span className="label-text-alt font-serif font-medium text-base">Developed By:-   
+                                    <a href="https://www.linkedin.com/in/harsh-gupta137/" target='_blank' className="link link-hover pr-5">@harsh_gupta </a>
+                                     <a href="https://www.linkedin.com/in/aashir-zayd-b28136275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className="link link-hover">@Aashir_Zayd</a></span>
 
                                 </label>
                             </div>
@@ -55,7 +70,7 @@ export default function Footer() {
                     
 
                 </footer>
-                <div className="bg-slate-600 -mt-10">LOGOS</div>
+                
                 
             </section>
         </div>

@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import styles from "../styles/Responsive.module.css";
+import { GoArrowRight,GoArrowLeft } from "react-icons/go";
 
 
 export default function Home() {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
+    
     const [announcement, setaAnnouncement] = useState([
         {
             id: 1,
@@ -35,6 +35,7 @@ export default function Home() {
         },
     ]
     )
+
     const arrowStyles = {
         position: 'absolute',
         zIndex: 2,
@@ -45,8 +46,12 @@ export default function Home() {
         color: 'black',
         background:"white",
         border: '1px solid black',
-        borderRadius:'14px'
+        borderRadius:'14px',
+        paddingLeft:'6px'
+        
+        
     }
+    
 
     const indicatorStyles= {
         background: '#fff',
@@ -61,7 +66,7 @@ export default function Home() {
     return (
 
         //  {/* HERO SECTION*/}
-        <div className='mt-20 '>
+        <div className='md:mt-20 sm:-mt-20 '>
             <section className=' h-[100vh] w-[100%] bg-cover pt-0 pr-20 flex flex-col items-start justify-center hero'>
 
                 <div className='ml-3 '>
@@ -279,44 +284,48 @@ export default function Home() {
                         Announcement
                     </h2>
                 </div>
-
-                <Carousel  autoPlay infiniteLoop showArrows showThumbs={false}
+               
+        <Carousel className='border-2 border-black rounded-xl bg-gray-200'   autoPlay interval={5000} infiniteLoop showArrows showStatus={false} showThumbs={false}
                 renderArrowPrev={(onClickHandler, hasPrev, label) =>
                     hasPrev && (
-                        <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 } }>
-                            -
+                        <button type="button" onClick={onClickHandler} title={label}  style={{ ...arrowStyles, left: 15 } }>
+                           <GoArrowLeft /> 
                         </button>
                     )
                 }
                 renderArrowNext={(onClickHandler, hasNext, label) =>
                     hasNext && (
                         <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles,   right: 20 }}>
-                            +
+                            <GoArrowRight />
                         </button>
                     )
                     }    
                 >
-
+                    
                     {announcement.map((announcement) => (
                         
                         
-                        <div key="announcement.id" className="bg-gray-200 mt-10 mb-20 md:h-[40vh] sm:h-auto items-center justify-center">
+                        <div key="announcement.id" className= " mt-3  mb-10 md:h-[40vh] sm:h-auto items-center justify-center">
                             <p className='text-3xl text-center text-gray-400 underline'>{announcement.title}</p>
                             <p className='text-l text-center text-gray-400'>{announcement.date}</p>
                             
                             <p className="text-center p-20 ">{announcement.description}</p>
                         </div>
+                        
 
                     ))}
+                    
+                    
                 </Carousel>
+            
 
 
 
             </section>
-            <div className="divider pb-10 w-[40%] ml-[30%]" ></div>
+            <div className="divider pb-5 w-[40%] ml-[30%]" ></div>
 
             {/* Our Collabration*/}
-            <section className='hero xl:h-[70vh]  h-auto w-[100%] bg-cover py-5 mt-5  flex flex-col  items-center justify-around '>
+            <section className='hero mb-3 xl:h-[70vh]  h-auto w-[100%] bg-cover pb-5 mt-5  flex flex-col  items-center justify-around '>
 
                 <div className=''>
                     <p className='text-[#2b3547] text-4xl text-center font-Baskervville  font-bold'>Our Collabration</p>
@@ -349,13 +358,13 @@ export default function Home() {
                 </div>
             </section>
 
-            <div className="divider py-10 w-[40%] ml-[30%]" ></div>
+            {/* <div className="divider  w-[40%] ml-[30%]" ></div> */}
 
             {/* Our ACHIVEMENT*/}
 
-            <section className='  w-[100%] h-[70vh]  '>
+            {/* <section className='  w-[100%] h-[70vh]  '>
                 <p className='text-[#02256B] font-semibold text-3xl   font-Baskervville pb-3 text-center underline-offset-8'>Achivement</p>
-                {/* <div className='flex justify-center translate-x-10'>
+                <div className='flex justify-center translate-x-10'>
                     <div className="blog-card">
                         <input type="radio" name="select" id="tap-1" checked />
                         <input type="radio" name="select" id="tap-2" />
@@ -412,10 +421,10 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
 
-            </section>
+            </section> */}
 
             {/* Footer*/}
 
