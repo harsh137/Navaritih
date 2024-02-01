@@ -5,23 +5,23 @@ export default function About() {
     const [gallery, setGallery] = useState([
         {
             id: 1,
-            img: "/Logo/TRANSPARENT_LOGO.png"
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
         },
         {
             id: 2,
-            img: "/Logo/TRANSPARENT_LOGO.png"
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
         },
         {
             id: 3,
-            img: "/Logo/TRANSPARENT_LOGO.png"
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
         },
         {
             id: 4,
-            img: "/Logo/TRANSPARENT_LOGO.png"
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
         },
         {
             id: 5,
-            img: "/Logo/TRANSPARENT_LOGO.png"
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
         },
 
 
@@ -124,7 +124,7 @@ export default function About() {
 
             {/* Gallery*/}
 
-            <section className="w-full md:h-[90vh] sm:h-auto mb-20 sm:mb-5 ">
+            <section className="w-full md:h-[90vh] sm:h-auto mb-96 sm:mb-5 ">
                 <p className=' text-center font-Baskervville  font-bold md:text-5xl sm:text-4xl md:pb-2  text-[#02256B] underline mb-4'>Gallery</p>
 
 
@@ -132,13 +132,13 @@ export default function About() {
 
                     {
                         gallery.map((e) =>
-                            <div key={e.id} className="carousel-item md:w-1/5 sm:w-1/2 mr-5 ">
-                                <img src="/Logo/TRANSPARENT_LOGO.png" className=" h-[90%] w-[90%] " alt="Drink" />
+                            <div key={e.id} className="carousel-item md:w-1/5 sm:w-1/2 mr-5  ">
+                                <img src={e.img} className=" h-[90%] w-[90%] rounded-xl " alt="Drink" />
                             </div>
                         )}
 
                 </div>
-                <div className="divider pb-0 w-[50%] ml-[25%]" ></div>
+                
 
 
                 {/* <div className="w-[100%] md:h-[45vh]  carousel rounded-box items-center ">
@@ -150,41 +150,63 @@ export default function About() {
                             </div>
                         )}
                 </div> */}
-                
-                    <div class="container px-5 md:pb-24 h-auto mx-auto  flex flex-wrap">
-                       
-                        <div class="flex flex-row sm:flex-col flex-wrap  md:-m-2 -m-1">
-                            <div class="flex flex-wrap md:w-1/2 sm:w-[100%] ">
-                                <div class="md:p-2 p-1 w-1/2">
-                                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                                <div class="md:p-2 p-1 w-1/2">
-                                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                                <div class="md:p-2 p-1 w-full">
-                                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                            </div>
-                            <div class="flex flex-wrap md:w-1/2 sm:w-[100%">
-                                <div class="md:p-2 p-1 w-full">
-                                    <img alt="gallery" class="w-full h-full object-cover object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                                <div class="md:p-2 p-1 w-1/2">
-                                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                                <div class="md:p-2 p-1 w-1/2">
-                                    <img alt="gallery" class="w-full object-cover h-full object-center block" src="/LOGO/MainLogo.jpg"/>
-                                </div>
-                            </div>
+
+
+
+                <div className="  m-5 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid gap-4">
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""/>
                         </div>
                     </div>
-                
+                    <div className="grid gap-4">
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div className="grid gap-4">
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div className="grid gap-4">
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
+                        </div>
+                        <div>
+                            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+
+
             </section>
 
-            <div className="divider md:mt-[450px]  w-[40%] ml-[30%]" ></div>
+            <div className="divider md:mt-[930px] sm:mt-10  w-[40%] ml-[30%]" ></div>
 
             {/* FAQ SECTION */}
-            <section className="px-10 pb-5 ">
+            <section className=" px-10 pb-5 ">
                 <div  >
 
                     {/* <p className='font-bold font-mono text-xl text-center '></p> */}
