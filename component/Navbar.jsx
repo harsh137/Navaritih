@@ -85,7 +85,7 @@ export default function Navbar() {
                     {/* SMALLER NAVBAR LINKS */}
                    <div children='w-full '>
                         
-                        <ul className="uppercase font-bold text-2xl -mt-24">
+                        <ul className="uppercase font-bold text-2xl -mt-44">
                             <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
                                 <Link href='/'>Home</Link>
 
@@ -94,10 +94,7 @@ export default function Navbar() {
                                 <Link href='/about'>About</Link>
 
                             </li>
-                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
-                                <Link href='/Departments'>Departments</Link>
-
-                            </li>
+                            
                             <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
                                 <Link href='/ourTeam'>Our Teams</Link>
 

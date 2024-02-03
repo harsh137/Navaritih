@@ -53,13 +53,7 @@ export default function Home() {
     }
     
 
-    const indicatorStyles= {
-        background: '#fff',
-        width: 8,
-        height: 8,
-        display: 'inline-block',
-        margin: '0 8px',
-    };
+  
 
 
 
@@ -325,9 +319,9 @@ export default function Home() {
             <div className="divider pb-5 w-[40%] ml-[30%]" ></div>
 
             {/* Our Collabration*/}
-            <section className='hero mb-3 xl:h-[70vh]  h-auto w-[100%] bg-cover pb-5 mt-5  flex flex-col  items-center justify-around '>
+            <section className='hero  xl:h-[70vh]  h-auto w-[100%] bg-cover pb-5 mt-5  flex flex-col  items-center justify-around '>
 
-                <div className=''>
+                <div className='pt-4 pb-4'>
                     <p className='text-[#2b3547] text-4xl text-center font-Baskervville  font-bold'>Our Collabration</p>
 
                 </div>

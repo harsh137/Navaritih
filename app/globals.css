@@ -187,3 +187,18 @@ input[type="checkbox"] {
   box-shadow:  6px 6px 21px #97a8d040,
              -6px -6px 21px #dbcff0;
 } 
+
+
+/* ABOUT SECTION */
+@media only screen and (min-width: 600px) {
+  .carousel-wrapper{
+    max-width: 100%;
+  }
+}
+.slick-dots li button:before {
+  color: orange;
+}
+.button__bar li.slick-active button {
+  opacity: .75;
+  color: #000
+}

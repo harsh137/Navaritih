@@ -23,8 +23,28 @@ export default function About() {
             id: 5,
             img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
         },
+        {
+            id: 6,
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+        },
+        {
+            id: 7,
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+        },
+        {
+            id: 8,
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+        },
+        {
+            id: 9,
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+        },
+        {
+            id: 10,
+            img: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+        },
 
-
+        
 
     ])
     const FAQ = [
@@ -128,11 +148,11 @@ export default function About() {
                 <p className=' text-center font-Baskervville  font-bold md:text-5xl sm:text-4xl md:pb-2  text-[#02256B] underline mb-4'>Gallery</p>
 
 
-                <div className="w-[100%] md:h-[45vh]   carousel rounded-box items-center ">
+                <div className="w-[100%] md:h-[45vh]  ml-2  carousel border-2 border-black p-4 rounded-box items-center ">
 
                     {
                         gallery.map((e) =>
-                            <div key={e.id} className="carousel-item md:w-1/5 sm:w-1/2 mr-5  ">
+                            <div key={e.id} className="carousel-item md:w-1/6 sm:w-1/2 mr-5  ">
                                 <img src={e.img} className=" h-[90%] w-[90%] rounded-xl " alt="Drink" />
                             </div>
                         )}
