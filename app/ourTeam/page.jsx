@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from "react"
+import React,{ useState } from "react"
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import { GoArrowRight, GoArrowLeft } from "react-icons/go";
@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-export default function page() {
+const Page = () => {
  
 
   const Developers = [
@@ -514,7 +514,7 @@ export default function page() {
   
 
   const Department = ["Programming Team", "Design Team", "Cinematography", "Finance Team", "Gamming Team", "Public Realtion", "Photography Team", "Pixel Crew", "Cyber Security", "R&D Team"]
-  const [selectedepartment, setSelectedepartment] = useState("Programming Team")
+  const [selectedepartment, setSelectedepartment] = useState("Programming Team");
   
   const teamData = getTeamData(selectedepartment);
   
@@ -745,3 +745,4 @@ export default function page() {
     </div>
   )
 }
+export default Page;
