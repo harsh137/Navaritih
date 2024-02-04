@@ -60,7 +60,7 @@ export default function Home() {
     return (
 
         //  {/* HERO SECTION*/}
-        <div className='md:mt-20 sm:-mt-20 '>
+        <div className='md:mt-20 sm:-mt-10 '>
             <section className=' h-[100vh] w-[100%] bg-cover pt-0 pr-20 flex flex-col items-start justify-center hero'>
 
                 <div className='ml-3 '>

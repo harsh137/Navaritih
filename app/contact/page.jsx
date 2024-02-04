@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       <section className="relative overflow-hidden  mt-28   ">
         <div className="container mt-10 ">
-          <div className=" -ml-5 sm:-mr-10 flex flex-wrap lg:justify-between">
+          <div className=" -ml-5 sm:-ml-10 sm:-mr-8 flex flex-wrap lg:justify-between">
             <div className="w-full px-8 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 ml-10 max-w-[570px] lg:mb-0">
                 
@@ -110,7 +110,7 @@ const Contact = () => {
             </div>
 
             <div className="w-full md:ml-5 sm:ml-4 md:mr-20  mb-14 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg md:mr-10 sm:mr-7 bg-white p-8 shadow-lg  sm:p-12 sm:ml-8">
+              <div className="relative rounded-lg md:mr-10 sm:mr-5 bg-white p-8 shadow-lg  sm:p-12 sm:ml-8">
                 <form>
                   <ContactInputBox
                     type="text"

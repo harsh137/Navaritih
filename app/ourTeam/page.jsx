@@ -397,10 +397,10 @@ const Page = () => {
 
   const TeamSlider = ({ teamData }) => {
     return (
-      <Slider  {...TeamSetting } className=" rounded-xl md:w-[90%] sm:w-3/4 md:px-2 sm:py-3 md:py-2    " >
+      <Slider  {...TeamSetting } className=" rounded-xl md:w-[90%] sm:w-[80%] md:px-2 sm:py-3 md:py-2    " >
         {teamData.map((e) => (
           <div key={e.id} className="w-full  p-4 md:w-1/2 lg:w-1/3 flex flex-row justify-around">
-          <div className="flex items-center h-full p-8 bg-gray-800 dark:bg-gray-800 rounded-xl">
+          <div className="flex items-center h-full md:p-8 sm:p-4 bg-gray-800 dark:bg-gray-800 rounded-xl">
             <img className="object-cover w-24 h-24 rounded-lg" src={e.imageUrl} alt="" />
             <div className="mx-4">
               <h2 className="text-lg font-semibold text-white capitalize">{e.name}</h2>
