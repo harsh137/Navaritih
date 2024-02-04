@@ -24,7 +24,9 @@ module.exports = {
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
         Baskervville:["Baskervville,sans-serif"],
-        Poppins:["poppins,sans-serif"]
+        Poppins:["poppins,sans-serif"],
+        Protest:["Protest Revolution", "sans-serif"],
+        Pacifico:['Pacifico', 'cursive']
       },
     },
   },

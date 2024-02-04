@@ -65,11 +65,11 @@ export default function Home() {
             <section className=' h-[100vh] w-[100%] bg-cover pt-0 pr-20 flex flex-col items-start justify-center hero'>
 
                 <div className='ml-3 '>
-                    <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
+                    <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 sm:my-0 " />
 
-                    <h4 className='text-[#2b3547] pb-4 text-5xl sm:3xl text-center pt-20 '>Welcome To</h4>
-                    <h2 className="text-[#2b3547]  text-6xl sm:2xl text-center"> NAVARITIH </h2>
-                    <p className='text-[#2b3547]  text-4xl sm:2xl text-center pb-20'>&quot; Where technology Ignites The World &quot;</p>
+                    <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Pacifico pb-4 text-5xl sm:3xl text-center pt-20 '>Welcome To</h4>
+                    <h2 className="md:text-[#2b3547] sm:text-[#1b212c]  font-Baskervville text-6xl sm:2xl text-center"> NAVARITIH </h2>
+                    <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Pacifico py-3 md:text-5xl sm:text-3xl sm:font-medium text-center pb-20 sm:leading-normal'>&quot; Where technology Ignites The World &quot;</p>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
 
                 </div>
@@ -80,7 +80,7 @@ export default function Home() {
 
             {/* OVERVIEW */}
             <section className=' -mt-5 mb-10 Overview w-3/4 flex justify-center ml-[12%]  ' >
-                <div className='h-2/4 hover:h-3/4 hover:text-lg bg-white w-[100%] rounded-3xl  m-2 ease-in-out '>
+                <div className='h-2/4   bg-white w-[100%] rounded-3xl  m-2 ease-in-out '>
                     <div className='items-center flex-col text-center border-2 border-yellow-200 rounded-3xl p-2'>
                         <p className=' items-center justify-center font-Baskervville  font-bold text-3xl pb-2 text-[#02256B]'>Overview</p>
                         <p><span className='text-wrap text-center text-black'>At Jain University, we recognize the importance of  fostering a dynamic and innovative
@@ -110,7 +110,7 @@ export default function Home() {
                             accusantium doloremque rem aperiam, eaque ipsa quae.
                         </p>
                     </div>
-                    <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-4 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
                         <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
                             <div>
                                 <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
