@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { GoArrowRight,GoArrowLeft } from "react-icons/go";
 
 
+
 export default function Home() {
 
     
