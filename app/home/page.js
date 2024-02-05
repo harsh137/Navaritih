@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { GoArrowRight,GoArrowLeft } from "react-icons/go";
+import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 
 
 
 export default function Home() {
 
-    
+
     const [announcement, setaAnnouncement] = useState([
         {
             id: 1,
@@ -45,16 +45,16 @@ export default function Home() {
         height: 30,
         cursor: 'pointer',
         color: 'black',
-        background:"white",
+        background: "white",
         border: '1px solid black',
-        borderRadius:'14px',
-        paddingLeft:'6px'
-        
-        
-    }
-    
+        borderRadius: '14px',
+        paddingLeft: '6px'
 
-  
+
+    }
+
+
+
 
 
 
@@ -69,7 +69,7 @@ export default function Home() {
 
                     <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Pacifico pb-4 text-5xl sm:3xl text-center pt-20 '>Welcome To</h4>
                     <h2 className="md:text-[#2b3547] sm:text-[#1b212c]  font-Baskervville text-6xl sm:2xl text-center"> NAVARITIH </h2>
-                    <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Pacifico py-3 md:text-5xl sm:text-3xl sm:font-medium text-center pb-20 sm:leading-normal'>&quot; Where technology Ignites The World &quot;</p>
+                    <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Pacifico py-3 md:text-5xl sm:text-3xl sm:font-medium text-center pb-20 sm:leading-normal tab:lead'>&quot; Where technology Ignites The World &quot;</p>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
 
                 </div>
@@ -105,9 +105,8 @@ export default function Home() {
 
                             Our Motive
                         </h2>
-                        <p className="text-base text-gray-700 md:text-lg">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque rem aperiam, eaque ipsa quae.
+                        <p className="text-base text-gray-700 md:text-neutral">
+                            The motive of Navaritih Forum is to create a vibrant community where diverse perspectives converge, meaningful dialogues flourish, and transformative solutions emerge. The forum is driven by the desire to inspire positive societal change by bridging gaps between academia and industry, promoting inclusivity, and embracing the belief that true progress stems from the synergy of diverse perspectives and experiences.
                         </p>
                     </div>
                     <div className="grid gap-4 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
@@ -274,45 +273,45 @@ export default function Home() {
             <section id='top' className=' ml-10 mr-10   '>
                 <div>
 
-                    <h2  className="max-w-lg mb-6 font-Baskervville font-semibold text-3xl  text-center leading-none tracking-tight text-[#02256B] sm:text-4xl md:mx-auto">
+                    <h2 className="max-w-lg mb-6 font-Baskervville font-semibold text-3xl  text-center leading-none tracking-tight text-[#02256B] sm:text-4xl md:mx-auto">
 
                         Announcement
                     </h2>
                 </div>
-               
-        <Carousel className='border-2 border-black rounded-xl bg-gray-200'   autoPlay interval={5000} infiniteLoop showArrows showStatus={false} showThumbs={false}
-                renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                    hasPrev && (
-                        <button type="button" onClick={onClickHandler} title={label}  style={{ ...arrowStyles, left: 15 } }>
-                           <GoArrowLeft /> 
-                        </button>
-                    )
-                }
-                renderArrowNext={(onClickHandler, hasNext, label) =>
-                    hasNext && (
-                        <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles,   right: 20 }}>
-                            <GoArrowRight />
-                        </button>
-                    )
-                    }    
+
+                <Carousel className='border-2 border-black rounded-xl bg-gray-200' autoPlay interval={5000} infiniteLoop showArrows showStatus={false} showThumbs={false}
+                    renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                        hasPrev && (
+                            <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 15 }}>
+                                <GoArrowLeft />
+                            </button>
+                        )
+                    }
+                    renderArrowNext={(onClickHandler, hasNext, label) =>
+                        hasNext && (
+                            <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 20 }}>
+                                <GoArrowRight />
+                            </button>
+                        )
+                    }
                 >
-                    
+
                     {announcement.map((announcement) => (
-                        
-                        
-                        <div key="announcement.id" className= " mt-3  mb-10 md:h-[40vh] sm:h-auto items-center justify-center">
+
+
+                        <div key="announcement.id" className=" mt-3  mb-10 md:h-[40vh] sm:h-auto items-center justify-center">
                             <p className='text-3xl text-center text-gray-400 underline'>{announcement.title}</p>
                             <p className='text-l text-center text-gray-400'>{announcement.date}</p>
-                            
+
                             <p className="text-center p-20 ">{announcement.description}</p>
                         </div>
-                        
+
 
                     ))}
-                    
-                    
+
+
                 </Carousel>
-            
+
 
 
 

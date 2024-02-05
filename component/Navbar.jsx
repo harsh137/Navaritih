@@ -55,7 +55,7 @@ export default function Navbar() {
                     </li>
                     <li>
                     <Link href="/">
-                            <button className="mr-5   bg-[#CEFF00] text-slate hover:bg-slate-800 hover:text-[#CEFF00] rounded-full uppercase font-bold px-8 py-2 font-Roboto "> Join Now </button>
+                            <button className="mr-5 -mt-3 bg-[#b9c6da] text-slate hover:bg-[#5b636e] hover:text-[#CEFF00] rounded-full uppercase font-bold px-8 py-2 font-Roboto "> Join Now </button>
                         </Link>
                 
                     </li>
@@ -78,7 +78,7 @@ export default function Navbar() {
 
                 {/* Small Screen Navi */}
                 <div className={menuIcon?
-                "md:hidden absolute top-[98px] right-0 bottom-0 left-0 flex justify-center items-center w-[100%] h-screen bg-opacity-100 bg-slate-200  text-black text-center ease-in duration-300"
+                "md:hidden absolute top-[98px] right-0 bottom-0 left-0 flex justify-center items-center w-[100%] h-screen bg-opacity-100 bg-slate-700 text-black text-center ease-in duration-300"
                 :
                 "md:hidden absolute top-[98px] right-0 left-[-100%] flex justify-center items-center w-[100%] h-screen bg-inherit  text-black text-center ease-in duration-300"}>
 
@@ -86,21 +86,21 @@ export default function Navbar() {
                    <div children='w-full '>
                         
                         <ul className="uppercase font-bold text-2xl -mt-44">
-                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
+                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#c3bebe] cursor-pointer">
                                 <Link href='/'>Home</Link>
 
                             </li>
-                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
+                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#c3bebe] cursor-pointer">
                                 <Link href='/about'>About</Link>
 
                             </li>
                             
-                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
+                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#c3bebe] cursor-pointer">
                                 <Link href='/ourTeam'>Our Teams</Link>
 
                             </li>
                             
-                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#CEFF00] cursor-pointer">
+                            <li onClick={handleSamllScreenNavi} className=" py-5 hover:text-[#c3bebe] cursor-pointer">
                                 <Link href='/contact'>Contact Us</Link>
 
                             </li>

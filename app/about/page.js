@@ -95,7 +95,7 @@ export default function About() {
             <section >
                 <div className='  flex md:flex-row sm:flex-col  justify-around items-center md:h-[80vh] sm:h-auto  w-full bg-[#b9c6da]'>
                     <div className="  md:px-5 sm:pt-10">
-                        <img src="/Logo/TRANSPARENT_LOGO.png" className=" md:size-96  " />
+                        <img src="/Logo/TRANSPARENT_LOGO.png" className=" md:size-96 md:pb-10  " />
                     </div>
                     <div className=" md:w-1/2 md:h-1/2 sm:pb-20 sm:px-4   ">
                         <p className="md:text-[90px] sm:text-[75px] font-semibold text-[#243e68] mb-2.5 font-Protest text-center md:-mt-20">About Us</p>
@@ -113,7 +113,7 @@ export default function About() {
 
             {/* Misson ANd Vision */}
             <section className=" md:mb-2 sm:mb-72">
-                <div className="flex md:flex-row sm:flex-col h-[54vh] w-full md:justify-around sm:justify-center items-center  pb-2 md:-mt-20 sm:mt-60">
+                <div className="flex md:flex-row sm:flex-col  h-[54vh] w-full md:justify-around sm:justify-center items-center  pb-2 md:-mt-20 sm:mt-60">
                     <div className="h-auto  md:w-[25%] sm:w-[80%] flex-col  border-2 border-black px-4 py-4 text-ellipsis  mission ">
                         <p className="text-center text-3xl font-semibold ">Mission</p>
                         <p className="text-wrap text-center font-Roboto text-ellipsis ">
@@ -148,7 +148,7 @@ export default function About() {
                 <p className=' text-center font-Baskervville  font-bold md:text-5xl sm:text-4xl md:pb-2  text-[#02256B] underline mb-4'>Gallery</p>
 
 
-                <div className="w-[100%] md:h-[45vh]  ml-2  carousel border-2 border-black p-4 rounded-box items-center ">
+                <div className="w-[100%] md:h-[45vh]    carousel border-2 border-black p-4 rounded-box items-center ">
 
                     {
                         gallery.map((e) =>
