@@ -12,27 +12,27 @@ export default function Home() {
     const [announcement, setaAnnouncement] = useState([
         {
             id: 1,
-            title: "Announcement",
-            description: "kjhjj ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            date: "2021-11-10"
+            title: "INAUGURATION",
+            description: "Join us on 23 January 2024, for the official Inaugural Ceremony of our Navaritih Forum scheduled to commence at 09:30 AM in Conference Hall 3, 2ND Floor, JAIN (Deemed-to-be University).",
+            date: "23 January 2024"
         },
         {
             id: 2,
-            title: "Announcement",
-            description: "hjghgjk ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            date: "2021-12-10"
+            title: "TEC TALK 1.0",
+            description: "An event that will exemplify our dedication to exploring cutting-edge topics and emerging technologies. This seminar, scheduled for 23RD January 2024, from 10:30 AM onwards at Conference Hall 3, 2ND Floor, JAIN (Deemed-to-be University) will feature presentations delivering insightful findings and perspectives. We look forward to engaging discussions and innovative ideas at this event",
+            date: "23 January 2024"
         },
         {
             id: 3,
-            title: "Announcement",
-            description: "jkgjkkjjbk ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            date: "2021-09-10"
+            title: "IDEATHON",
+            description: "Unleash your creativity at our inter college Ideothon event! Join us for a day filled with innovation on 8TH February 2024, where you can pitch your tech ideas and collaborate on inventing groundbreaking apps, software, or gadgets. The event kicks off at 09:30 AM at Conference Hall 2, Ground floor, JAIN (Deemed-to-be University), Jayanagar 9TH Block, Bangalore, Karnataka.",
+            date: "8 February 2024"
         },
         {
             id: 4,
-            title: "Announcement",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            date: "2021-09-10"
+            title: "CRYPTOQUEST",
+            description: "Introducing CryptoQuest, a dynamic 2-day event by our Cybersecurity Team! Day 1 features an exclusive session with a cybersecurity expert, immersive workshops, live demos, and networking. Day 2 brings a steganography contest to test cryptographic skills. Join us on 27TH & 28TH February 2024 at Conference Hall 3, 2ND Floor, JAIN (Deemed-to-be University), for an unforgettable experience where knowledge meets innovation",
+            date: "27 & 28 February 2024"
         },
     ]
     )
@@ -64,12 +64,12 @@ export default function Home() {
         <div className='md:mt-20 sm:-mt-10 '>
             <section className=' h-[100vh] w-[100%] bg-cover pt-0 pr-20 flex flex-col items-start justify-center hero'>
 
-                <div className='ml-3 '>
+                <div className='ml-3 ms:pl-20 sm:pl-5 '>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 sm:my-0 " />
 
                     <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Baskervville pb-4 text-6xl sm:3xl text-center pt-20 '>Welcome To</h4>
                     <h2 className="md:text-[#2b3547] sm:text-[#1b212c]  font-Baskervville text-6xl sm:2xl text-center"> NAVARITIH </h2>
-                    <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Pacifico py-3 md:text-5xl sm:text-3xl sm:font-medium text-center pb-20 sm:leading-normal tab:lead'>&quot; Where technology Ignites The World &quot;</p>
+                    <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Baskervville py-3 md:text-3xl sm:text-3xl sm:font-bold md:font-bold text-center pb-20 sm:leading-normal tab:lead'>  Where Technology Ignites The World</p>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
 
                 </div>
@@ -83,7 +83,7 @@ export default function Home() {
                 <div className='h-2/4   bg-white w-[100%] rounded-3xl  m-2 ease-in-out '>
                     <div className='items-center flex-col text-center border-2 border-yellow-200 rounded-3xl p-2'>
                         <p className=' items-center justify-center font-Baskervville  font-bold text-3xl pb-2 text-[#02256B]'>Overview</p>
-                        <p><span className='text-wrap text-center text-black'>At Jain University, we recognize the importance of  fostering a dynamic and innovative
+                        <p><span className='text-wrap text-center text-black'>At Jain (Deemed-to-be) University, we recognize the importance of  fostering a dynamic and innovative
                             learning environment for our students. We believe that students should have the opportunity to
                             explore and follow their passion for  technology beyond the confines of their academic
                             curriculum. To this end, we propose the establishment of the forum Navaritih (Innovation)
@@ -300,8 +300,8 @@ export default function Home() {
 
 
                         <div key="announcement.id" className=" mt-3  mb-10 md:h-[40vh] sm:h-auto items-center justify-center">
-                            <p className='text-3xl text-center text-gray-400 underline'>{announcement.title}</p>
-                            <p className='text-l text-center text-gray-400'>{announcement.date}</p>
+                            <p className='text-3xl text-center text-gray-500 font-Baskervville font-bold pb-2'>{announcement.title}</p>
+                            <p className='text-l text-center text-gray-500'>{announcement.date}</p>
 
                             <p className="text-center p-20 ">{announcement.description}</p>
                         </div>

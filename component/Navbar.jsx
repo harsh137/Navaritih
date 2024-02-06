@@ -1,16 +1,23 @@
 "use client"
 import { useState } from "react"
 import Link from 'next/link'
+import {usePathname} from "next/navigation";
 
 
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
+
 export default function Navbar() {
 
     const [menuIcon,setMenuIcon]=useState(false)
+    // const [selected,setSelected]=useState("home" )  //default selected page is home
 
     const handleSamllScreenNavi=()=>{
         setMenuIcon( !menuIcon);
     }
+    const currentRoute=usePathname();
+
+    const NavItemStyle='font-Roboto hover:text-[#CEFF00] text-white'
+    const NavItemStyleActive='font-Roboto text-[#CEFF00] '
 
     return (
         <header className="bg-[#02256B] w-[100%] ease-in duration-500 fixed top-0 left-0 z-10 mb-10 nav">
@@ -25,14 +32,14 @@ export default function Navbar() {
                 {/* Large Screen Navi */}
                 <div>
   
-                <ul className='hidden md:flex uppercase mt-3 font-bold lg:text-[15px] text-white'>
-                    <li className="mr-4 lg:mr-8 hover:text-[#CEFF00]">
-                        <Link href="/" className='font-Roboto'>
+                <ul className='hidden md:flex uppercase mt-3 font-bold lg:text-[15px] '>
+                    <li className='mr-4 lg:mr-8  ' >
+                        <Link href="/" className={currentRoute === "/" ? NavItemStyleActive : NavItemStyle}>
                          HOME
                         </Link>
                     </li>
-                    <li className="mr-4 lg:mr-8 hover:text-[#CEFF00]">
-                        <Link href="/about" className='font-Roboto'>
+                    <li className="mr-4 lg:mr-8 ">
+                        <Link href="/about" className={currentRoute === "/about" ? NavItemStyleActive : NavItemStyle}>
                          ABOUT
                         </Link>
                     </li>
@@ -42,20 +49,20 @@ export default function Navbar() {
                         </Link>
                     </li> */}
                     
-                    <li className="mr-4 lg:mr-8  hover:text-[#CEFF00]">
-                        <Link href="/ourTeam" className='font-Roboto'>
+                    <li className="mr-4 lg:mr-8 ">
+                        <Link href="/ourTeam" className={currentRoute === "/ourTeam" ? NavItemStyleActive : NavItemStyle}>
                          Our Team
                         </Link>
                     </li>
                     
-                    <li className="mr-4 hover:text-[#CEFF00]">
-                        <Link href="/contact" className='font-Roboto'>
+                    <li className="mr-4">
+                        <Link href="/contact" className={currentRoute === "/contact" ? NavItemStyleActive : NavItemStyle}>
                          Contact Us
                         </Link>
                     </li>
                     <li>
                     <Link href="/">
-                            <button className="mr-5 -mt-3 bg-[#b9c6da] text-slate hover:bg-[#5b636e] hover:text-[#CEFF00] rounded-full uppercase font-bold px-8 py-2 font-Roboto "> Join Now </button>
+                            <button className="mr-5 -mt-3  text-white bg-blue-500 hover:bg-blue-700  rounded-full uppercase font-bold px-8 py-2 font-Roboto "> Join Now </button>
                         </Link>
                 
                     </li>

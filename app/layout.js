@@ -29,9 +29,11 @@ export default function RootLayout({ children }) {
           </head>
           <body className={inter.className}>
             <Navbar />
+            
             {children}
-            <SpeedInsights />
+            
             <Footer />
+            <SpeedInsights />
           </body>
 
         </html>

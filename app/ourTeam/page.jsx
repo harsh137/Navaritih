@@ -30,7 +30,7 @@ const Page = () => {
       name: 'Chandu',
       role: 'Backend Developer',
       imageUrl: '/Js_Ajs/PROGRAMMING/Chandu.N.jpg',
-      github:'',
+      github:'https://github.com/Chandu5777',
       linkedIn:"",
       Instagram:""
 
@@ -39,9 +39,9 @@ const Page = () => {
       id: 3,
       name: 'Ashir',
       role: 'Full Stack Developer',
-      imageUrl: '',
+      imageUrl: '/developer/Ashir.jpg',
       github:'',
-      linkedIn:"",
+      linkedIn:"https://www.linkedin.com/in/aashir-zayd-b28136275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       Instagram:""
 
     }
@@ -567,9 +567,9 @@ const Page = () => {
         return DesignTeam;
       case 'Cinematography':
         return Cinematography;
-      case 'Gamming Team':
+      case 'Gaming Team':
         return GammingTeam;
-      case 'Public Realtion':
+      case 'Public Relations':
         return PublicRealtion;
       case 'Photography Team':
         return PhotographyTeam;
@@ -597,7 +597,7 @@ const Page = () => {
 
 
 
-  const Department = ["Programming Team", "Design Team", "Cinematography", "Gamming Team", "Public Realtion", "Photography Team", "Pixel Crew", "Cyber Security", "R&D Team", "Cloud Computing", "Data Analytics", "Documentation Team", "Event Management", "ITH & IOT",]
+  const Department = ["Programming Team", "Design Team", "Cinematography", "Gaming Team", "Public Relations", "Photography Team", "Pixel Crew", "Cyber Security", "R&D Team", "Cloud Computing", "Data Analytics", "Documentation Team", "Event Management", "ITH & IOT",]
   const [selectedepartment, setSelectedepartment] = useState("Programming Team");
 
   const teamData = getTeamData(selectedepartment);
@@ -623,11 +623,11 @@ const Page = () => {
 
       {/* HERO SECTION */}
       <section title="Founder" className="h-auto   pt-16" >
-        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white underline underline-offset-8 mb-4 ">Founder Forewords</h2>
+        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white   mb-4 ">Founder Forewords</h2>
         <div className="flex md:flex-row sm:flex-col   items-center p-4 sm:p-6  dark:border-gray-700 ">
           <img className="object-cover w-1/3 rounded-xl aspect-square sm:size-72 mb-4" src="/Founder/Sanjeev Sir.jpg" alt="" />
           <div className="md:ml-10 sm:ml-0 sm:mb-10 w-full border rounded-lg border-white  p-5">  
-            <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center underline">Dr. Sanjeev Kumar Mandal</h1>
+            <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center ">Dr. Sanjeev Kumar Mandal</h1>
 
             <p className="mt-2 text-center text-white capitalize text-wrap sm:text-clip    ">
             &ldquo;Naviritih at Jain(Deemed-To-Be-University) , where the essence of innovation finds its home . As a student- led forum , Naviritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
@@ -666,18 +666,18 @@ const Page = () => {
 
       <section className="bg-gray-900">
         <div className="container px-6 py-4 mx-auto">
-          <h2 className="text-center font-Baskervville  font-bold text-4xl md:pb-2  text-white underline mb-20">Meet Our Top Management</h2>
+          <h2 className="text-center font-Baskervville  font-bold text-4xl   text-white  mb-20">Top Management</h2>
 
           <div className="md:pl-[19%] sm:pl-0 grid gap-8 self-center mt-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2  ">
 
 
             {TopManagement.map((e) => (
-              <div key={e.name} className=" max-w-xs text-center ">
+              <div key={e.name} className=" max-w-xs text-center pb-20 ">
                 <img className=" object-fill  size-72 mx-auto rounded-lg" src={e.imageUrl} alt="avatar" />
 
                 <div className="mt-4">
-                  <h3 className="text-xl font-medium  underline text-white ">{e.name}</h3>
-                  <span className="mt-1 text-2xl font-medium text-white font-Roboto ">{e.role} Of Navritih</span>
+                  <h3 className="text-xl font-medium   text-white ">{e.name}</h3>
+                  <span className="mt-1 text-2xl font-medium text-white font-Roboto ">{e.role} Of Navaritih</span>
                   <div className="flex flex-row justify-center">
                     <a href="#" className="mx-2 mt-1 text-white  hover:text-gray-500  group-hover:text-white" aria-label="linkedIn">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -713,7 +713,7 @@ const Page = () => {
       {/* DEVELOPER SECTION */}
       <section>
         <div className="container px-6 py-4 mx-auto">
-          <h2 className="text-center font-Baskervville  font-bold text-4xl md:pb-2  text-white underline mb-20">Meet Our Proud Developers</h2>
+          <h2 className="text-center font-Baskervville  font-bold text-4xl md:pb-2  text-white  mb-20">Proud Developers</h2>
           <div className="flex flex-wrap -mx-4 -mt-8">
             {Developers.map((e) => (
               <div key={e.id} className="w-full  p-4 md:w-1/2 lg:w-1/3 flex flex-row justify-around">
@@ -764,10 +764,10 @@ const Page = () => {
 
       <section className="bg-gray-900 dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto flex flex-col justify-center items-center  ">
-          <h1 className="text-center font-Baskervville   font-bold text-4xl md:pb-2  text-white underline mb-4 "> Meet Our Council</h1>
+          <h1 className="text-center font-Baskervville   font-bold text-4xl md:pb-2  text-white  mb-4 "> Our Council</h1>
 
           <p className="max-w-2xl mx-auto mb-2 text-xl text-center text-gray-500 dark:text-gray-300">
-            Our Team Consist of multiple Department.
+            Our Council Consist of multiple Department.
           </p>
 
 
@@ -788,7 +788,7 @@ const Page = () => {
         <section className="pb-10">
 
           <div className="w-[100%] flex flex-col justify-center items-center" >
-            <h2 className="text-2xl  text-white mt-0 mb-3">{selectedepartment}</h2>
+            <h2 className="text-3xl  text-white mt-0 mb-3 font-Baskervville">{selectedepartment}</h2>
             {/* <TeamSlider teamData={teamData} /> */}
 
             <TeamDiv teamData={teamData} />

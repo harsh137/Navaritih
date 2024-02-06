@@ -99,7 +99,7 @@ export default function About() {
                     </div>
                     <div className=" md:w-1/2 md:h-1/2 sm:pb-20 sm:px-4   ">
                         <p className="md:text-[90px] sm:text-[75px] font-semibold text-[#243e68] mb-2.5 font-Protest text-center md:-mt-20">About Us</p>
-                        <p className="text-center text-wrap font-bold text-2xl font-Baskervville  text-[#303d52]">At Jain Deemed-to-be University, we recognize the importance of  fostering a dynamic and innovative
+                        <p className="text-center text-wrap font-bold text-2xl font-Baskervville  text-[#303d52]">At Jain (Deemed-to-be) University, we recognize the importance of  fostering a dynamic and innovative
                             learning environment for our students. We believe that students should have the opportunity to
                             explore and follow their passion for  technology beyond the confines of their academic
                             curriculum. To this end, we propose the establishment of the forum Navaritih (Innovation)
@@ -226,11 +226,11 @@ export default function About() {
             <div className="divider md:mt-[930px] sm:mt-10  w-[40%] ml-[30%]" ></div>
 
             {/* FAQ SECTION */}
-            <section className=" px-10 pb-5 ">
+            <section className=" px-5 pb-5 ">
                 <div  >
 
                     {/* <p className='font-bold font-mono text-xl text-center '></p> */}
-                    <p className=' text-center font-Baskervville  font-bold text-4xl pb-2 text-[#02256B] underline mb-8'>Frequently Asked Questions</p>
+                    <p className=' text-center font-Baskervville  font-bold text-4xl pb-2 text-[#02256B] mb-8'>Frequently Asked Questions</p>
                 </div>
                 {
                     FAQ.map((e) =>

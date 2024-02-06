@@ -8,14 +8,12 @@ const Contact = () => {
           <div className=" -ml-5 sm:-ml-10 sm:-mr-8 flex flex-wrap lg:justify-between">
             <div className="w-full px-8 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 ml-10 max-w-[570px] lg:mb-0">
-                
+
                 <h2 className="mb-6 text-[32px] font-bold font-Baskervville uppercase text-[#02256B]  sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Feel free to reach out to us for any inquiries. We value your input and are committed to fostering a supportive and informative community. You can find our contact details below:
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -37,7 +35,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      44/4, District Fund Rd, behind Big Bazaar, Kottapalya, Jayanagara 9th Block, Jayanagar, Bengaluru, Karnataka ,Pincode:-560069
                     </p>
                   </div>
                 </div>
@@ -77,7 +75,8 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      +91 78923 78967 (President )
+                      +91 6376 868 962 (Secretary)
                     </p>
                   </div>
                 </div>
@@ -102,7 +101,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      navaritih.ju@gmail.com
                     </p>
                   </div>
                 </div>
