@@ -74,10 +74,15 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-[#02256B] font-Baskervville">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
-                      +91 78923 78967 (President )
-                      +91 6376 868 962 (Secretary)
-                    </p>
+                    <a href='tel:7892378967' className="text-base text-body-color dark:text-dark-6">
+                      +917892378967 (President)
+                      </a>
+                      <br/>
+                      <a href="tel:6376868962" className="text-base text-body-color dark:text-dark-6">
+                      +916376868962 (Secretary)
+                      </a>
+                      
+                    
                   </div>
                 </div>
 

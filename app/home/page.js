@@ -64,7 +64,7 @@ export default function Home() {
         <div className='md:mt-20 sm:-mt-10 '>
             <section className=' h-[100vh] w-[100%] bg-cover pt-0 pr-20 flex flex-col items-start justify-center hero'>
 
-                <div className='ml-3 ms:pl-20 sm:pl-5 '>
+                <div className=' ms:pl-20 sm:pl-2 '>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 sm:my-0 " />
 
                     <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Baskervville pb-4 text-6xl sm:3xl text-center pt-20 '>Welcome To</h4>
