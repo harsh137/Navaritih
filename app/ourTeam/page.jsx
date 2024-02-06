@@ -630,7 +630,7 @@ const Page = () => {
             <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center ">Dr. Sanjeev Kumar Mandal</h1>
 
             <p className="mt-2 text-center text-white capitalize text-wrap sm:text-clip    ">
-            &ldquo;Naviritih at Jain(Deemed-To-Be-University) , where the essence of innovation finds its home . As a student- led forum , Naviritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
+            &ldquo;Naviritih at Jain (Deemed-To-Be) University , where the essence of innovation finds its home . As a student- led forum , Naviritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
             </p>
 
             <div className="flex justify-center mt-3 -mx-2">
