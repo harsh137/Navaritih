@@ -99,7 +99,7 @@ export default function About() {
                     </div>
                     <div className=" md:w-1/2 md:h-1/2 sm:pb-20 sm:px-4   ">
                         <p className="md:text-[90px] sm:text-[75px] font-semibold text-[#243e68] mb-2.5 font-Protest text-center md:-mt-20">About Us</p>
-                        <p className="text-center text-wrap font-bold text-2xl font-Baskervville  text-[#303d52]">At Jain University, we recognize the importance of  fostering a dynamic and innovative
+                        <p className="text-center text-wrap font-bold text-2xl font-Baskervville  text-[#303d52]">At Jain Deemed-to-be University, we recognize the importance of  fostering a dynamic and innovative
                             learning environment for our students. We believe that students should have the opportunity to
                             explore and follow their passion for  technology beyond the confines of their academic
                             curriculum. To this end, we propose the establishment of the forum Navaritih (Innovation)

@@ -76,14 +76,14 @@ const Page = () => {
   // ]
   const TopManagement = [
     {
-      name: 'Yeshwant',
+      name: 'Yeshwanth M S',
       role: 'President',
       imageUrl:
         '/President/Yeshwant.jpg',
 
     },
     {
-      name: 'Rishab',
+      name: 'Divya Rishab',
       role: 'Secretary',
       imageUrl:
         '/secretary/Rishab.jpg',
@@ -95,7 +95,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Chandu.N',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl:
         '/Js_Ajs/PROGRAMMING/Chandu.N.jpg',
 
@@ -114,7 +114,7 @@ const Page = () => {
     {
       id: 1,
       name: "Alina Anjum.",
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Design Team/Alina Anjum.jpg'
     },
     // {
@@ -134,7 +134,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Yashas G S',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: 'Js_Ajs/Cinematography/Yashas G S (JS).jpg'
     },
     // {
@@ -155,7 +155,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Hemanth M Magaji',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Gaming/Hemanth M Magaji (AJS).jpg'
     },
     // {
@@ -175,13 +175,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Adithy B Rajesh',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: 'Js_Ajs/Public Relations/Adithy B Rajesh (JS).jpg'
     },
     {
       id: 2,
       name: 'Sanya Mustaq',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Public Relations/Sanya Mustaq (AJS).jpg'
     },
     // {
@@ -195,13 +195,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Harshith M Patel',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Photography/Harshith M Patel (AJS).jpg'
     },
     {
       id: 2,
       name: 'Sayan Das',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Photography/Sayan Das (JS).jpg'
     },
     // {
@@ -215,7 +215,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Vrushank C K',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Pixel Crew/Vrushank C K (JS).jpg'
     },
     // {
@@ -235,13 +235,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Raman Gautam',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Cybersecurity/Raman Gautam (JS).jpg'
     },
     {
       id: 2,
       name: 'Thamanna A K',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Cybersecurity/Thamanna A K (AJS).jpg'
     },
     // {
@@ -255,13 +255,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Arvind Kumar V',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Research and Development/Arvind Kumar V (AJS).jpg'
     },
     {
       id: 2,
       name: 'Kaivaniya R Bhandari',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Research and Development/Kaivaniya R Bhandari (JS).jpg'
     },
     // {
@@ -275,13 +275,13 @@ const Page = () => {
     {
       id: 1,
       name: 'N Nikitha',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/CloudComputing/N Nikitha (AJS).jpg'
     },
     {
       id: 2,
       name: 'Rishab N S',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/CloudComputing/Rishab N S (JS).jpg'
     },
     // {
@@ -295,13 +295,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Priyanshu Tripathi',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Data Analytics/Priyanshu Tripathi (AJS).jpg'
     },
     {
       id: 2,
       name: 'Saifuddin Totanwala',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Data Analytics/Saifuddin Totanwala (JS).jpg'
     },
     // {
@@ -315,13 +315,13 @@ const Page = () => {
     {
       id: 1,
       name: 'Muizz Ur Rehman ',
-      role: 'JS',
+      role: 'Joint Secretary',
       imageUrl: '/Js_Ajs/Documentation/Muizz Ur Rehman (JS).jpg'
     },
     {
       id: 2,
       name: 'Shriya C. Nair',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/Documentation/Shriya C. Nair (AJS).jpg'
     },
     // {
@@ -335,7 +335,7 @@ const Page = () => {
     {
       id: 1,
       name: 'Kalpitha S',
-      role: 'AJS',
+      role: 'Associate Joint Secretary',
       imageUrl: '/Js_Ajs/ITH & IOT/Kalpitha S (AJS).jpg'
     },
     // {
@@ -354,7 +354,7 @@ const Page = () => {
   const EventManagement = [{
     id: 1,
     name: 'Tanya A Singh ',
-    role: 'JS',
+    role: 'Joint Secretary',
     imageUrl: '/Js_Ajs/Event Management/Tanya A Singh (JS).jpg'
   }]
 
@@ -623,11 +623,11 @@ const Page = () => {
 
       {/* HERO SECTION */}
       <section title="Founder" className="h-auto   pt-16" >
-        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white underline underline-offset-8 mb-4 ">Message From Founder</h2>
+        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white underline underline-offset-8 mb-4 ">Founder Forewords</h2>
         <div className="flex md:flex-row sm:flex-col   items-center p-4 sm:p-6  dark:border-gray-700 ">
           <img className="object-cover w-1/3 rounded-xl aspect-square sm:size-72 mb-4" src="/Founder/Sanjeev Sir.jpg" alt="" />
-          <div className="md:ml-10 sm:ml-0 sm:mb-10 w-full border rounded-lg border-white  p-5">
-            <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center underline">SANJIV SIR</h1>
+          <div className="md:ml-10 sm:ml-0 sm:mb-10 w-full border rounded-lg border-white  p-5">  
+            <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center underline">Dr. Sanjeev Kumar Mandal</h1>
 
             <p className="mt-2 text-center text-white capitalize text-wrap sm:text-clip    ">
             &ldquo;Naviritih at Jain(Deemed-To-Be-University) , where the essence of innovation finds its home . As a student- led forum , Naviritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
@@ -673,11 +673,11 @@ const Page = () => {
 
             {TopManagement.map((e) => (
               <div key={e.name} className=" max-w-xs text-center ">
-                <img className=" Image_shadow object-fill  size-72 mx-auto rounded-lg" src={e.imageUrl} alt="avatar" />
+                <img className=" object-fill  size-72 mx-auto rounded-lg" src={e.imageUrl} alt="avatar" />
 
                 <div className="mt-4">
                   <h3 className="text-xl font-medium  underline text-white ">{e.name}</h3>
-                  <span className="mt-1 text-2xl font-medium text-white font-Roboto ">{e.role}</span>
+                  <span className="mt-1 text-2xl font-medium text-white font-Roboto ">{e.role} Of Navritih</span>
                   <div className="flex flex-row justify-center">
                     <a href="#" className="mx-2 mt-1 text-white  hover:text-gray-500  group-hover:text-white" aria-label="linkedIn">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -713,7 +713,7 @@ const Page = () => {
       {/* DEVELOPER SECTION */}
       <section>
         <div className="container px-6 py-4 mx-auto">
-          <h2 className="text-center font-Baskervville  font-bold text-4xl md:pb-2  text-white underline mb-20">Meet Our Developers</h2>
+          <h2 className="text-center font-Baskervville  font-bold text-4xl md:pb-2  text-white underline mb-20">Meet Our Proud Developers</h2>
           <div className="flex flex-wrap -mx-4 -mt-8">
             {Developers.map((e) => (
               <div key={e.id} className="w-full  p-4 md:w-1/2 lg:w-1/3 flex flex-row justify-around">
@@ -764,7 +764,7 @@ const Page = () => {
 
       <section className="bg-gray-900 dark:bg-gray-900">
         <div className="container px-6 py-10 mx-auto flex flex-col justify-center items-center  ">
-          <h1 className="text-center font-Baskervville   font-bold text-4xl md:pb-2  text-white underline mb-4 ">Meet Our Team</h1>
+          <h1 className="text-center font-Baskervville   font-bold text-4xl md:pb-2  text-white underline mb-4 "> Meet Our Council</h1>
 
           <p className="max-w-2xl mx-auto mb-2 text-xl text-center text-gray-500 dark:text-gray-300">
             Our Team Consist of multiple Department.

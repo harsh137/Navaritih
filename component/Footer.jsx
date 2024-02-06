@@ -26,13 +26,13 @@ export default function Footer() {
 
 
                     </nav>
-                    <nav className="text-white font-Baskervville">
+                    {/* <nav className="text-white font-Baskervville">
                         <header className="footer-title">Services</header>
                         <a className="link link-hover font-serif font-medium " >Branding</a>
                         <a className="link link-hover font-serif font-medium">Design</a>
                         <a className="link link-hover font-serif font-medium text-base  ">Marketing</a>
                         <a className="link link-hover font-serif font-medium text-base ">Advertisement</a>
-                    </nav>
+                    </nav> */}
                     <nav className="text-white font-Baskervville sm:-mt-3">
                         <header className="footer-title">Company</header>
                         <Link href='/home' className="link link-hover font-serif font-medium text-base ">Home</Link>

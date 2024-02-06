@@ -67,7 +67,7 @@ export default function Home() {
                 <div className='ml-3 '>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 sm:my-0 " />
 
-                    <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Pacifico pb-4 text-5xl sm:3xl text-center pt-20 '>Welcome To</h4>
+                    <h4 className='md:text-[#2b3547] sm:text-[#1b212c] font-Baskervville pb-4 text-6xl sm:3xl text-center pt-20 '>Welcome To</h4>
                     <h2 className="md:text-[#2b3547] sm:text-[#1b212c]  font-Baskervville text-6xl sm:2xl text-center"> NAVARITIH </h2>
                     <p className='md:text-[#2b3547] sm:text-[#1b212c]  font-Pacifico py-3 md:text-5xl sm:text-3xl sm:font-medium text-center pb-20 sm:leading-normal tab:lead'>&quot; Where technology Ignites The World &quot;</p>
                     <hr className="w-4/5 h-1 mx-auto my-4 bg-white border-0 rounded md:my-1 " />
