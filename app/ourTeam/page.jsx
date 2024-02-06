@@ -27,7 +27,7 @@ const Page = () => {
     },
     {
       id: 2,
-      name: 'Chandu',
+      name: 'Chandu Nagesh ',
       role: 'Backend Developer',
       imageUrl: '/Js_Ajs/PROGRAMMING/Chandu.N.jpg',
       github:'https://github.com/Chandu5777',
@@ -37,7 +37,7 @@ const Page = () => {
     },
     {
       id: 3,
-      name: 'Ashir',
+      name: 'Aashir Zayd',
       role: 'Full Stack Developer',
       imageUrl: '/developer/Ashir.jpg',
       github:'',
