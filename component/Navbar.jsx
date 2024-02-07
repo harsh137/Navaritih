@@ -61,7 +61,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                    <Link href="/">
+                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLScjD6NLDGZoR5nWfCgg3jNibcviFqw4GLJKZETGENeq2FRYNA/viewform">
                             <button className="mr-5 -mt-3  text-white bg-blue-500 hover:bg-blue-700  rounded-full uppercase font-bold px-8 py-2 font-Roboto "> Join Now </button>
                         </Link>
                 
@@ -114,8 +114,8 @@ export default function Navbar() {
                             
                         </ul>
                         <div className="flex flex-col justify-center items-center mt-16">
-                            <Link href="/">
-                                <button className=" bg-[#CEFF00] text-slate-800 rounded-full  hover:bg-slate-400 hover:text-[#CEFF00] uppercase font-bold py-3 w-[250px] mb-5"> JOin Now </button>
+                            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScjD6NLDGZoR5nWfCgg3jNibcviFqw4GLJKZETGENeq2FRYNA/viewform">
+                                <button className=" bg-[#CEFF00] text-slate-800 rounded-full  hover:bg-slate-400 hover:text-[#CEFF00] uppercase font-bold py-3 w-[250px] mb-5"> Join Now </button>
                             </Link>
                         </div>
                    </div>

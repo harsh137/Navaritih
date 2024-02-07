@@ -1,6 +1,73 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [isLoading,setIsLoading]=useState(false);
+  const validateEmail = () => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(form.email);
+};
+const validatePhone=()=>{
+  const regex = /^\d{10}$/;
+  return regex.test(form.phone);
+}
+
+  const  onsubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    console.log("Hello")
+    console.log(form)
+    
+    if(!form.email||!form.phone||!form.name||!form.message){
+      alert("Please Enter All The filds")
+      return;
+    }
+      
+      if (!validateEmail()) {
+          alert('Invalid email address');
+          return;
+      }
+      if (!validatePhone()) {
+        alert('Invalid Phone Number');
+        return;
+    }
+      try{
+        // console.log  ("Hello1")
+        const res = await fetch('/api/sendMail', {
+          
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(form)
+          
+          
+      })
+
+      // console.log("Hello2")
+      const data = await res.json()
+      // console.log(data,"hiii baby")
+      if (data.message === 'Message sent successfully') {
+          alert('Message sent successfully');
+      } else {
+          alert('Error sending message');
+      }
+  
+  
+      }
+      catch(error){
+        console.log(error)
+      }
+      setIsLoading(false);
+
+  }
+
   return (
     <>
       <section className="relative overflow-hidden  mt-28   ">
@@ -76,13 +143,13 @@ const Contact = () => {
                     </h4>
                     <a href='tel:7892378967' className="text-base text-body-color dark:text-dark-6">
                       +917892378967 (President)
-                      </a>
-                      <br/>
-                      <a href="tel:6376868962" className="text-base text-body-color dark:text-dark-6">
+                    </a>
+                    <br />
+                    <a href="tel:6376868962" className="text-base text-body-color dark:text-dark-6">
                       +916376868962 (Secretary)
-                      </a>
-                      
-                    
+                    </a>
+
+
                   </div>
                 </div>
 
@@ -116,33 +183,52 @@ const Contact = () => {
             <div className="w-full md:ml-5 sm:ml-4 md:mr-20  mb-14 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg md:mr-10 sm:mr-5 bg-white p-8 shadow-lg  sm:p-12 sm:ml-8">
                 <form>
-                  <ContactInputBox
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="phone"
-                    placeholder="Your Phone"
-                  />
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
+                  <div className="mb-6">
+                    <input
+                      type='text'
+                      placeholder="Enter Your Name"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      onChange={(e) => setForm({ ...form, name: e.target.value })}
+                      value={form.name}
+                      id="name"
+                    />
+                  </div>
+                  <div className="mb-6">
+                    <input
+                      type='number'
+                      placeholder='Enter Your Phone Number'
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                      value={form.phone}
+                    />
+                  </div>
+                  <div className="mb-6">
+                    <input
+                      type='Email'
+                      placeholder="Enter Your Email"
+                      className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      onChange={(e) => setForm({ ...form, email: e.target.value })}
+                      value={form.email}
+                    />
+                  </div>
+                  <div className="mb-6">
+                    <textarea
+                      rows='7'
+                      placeholder='Enter the Message'
+                      className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+                      
+                      onChange={(e) => setForm({ ...form, message:e.target.value })}
+                      value={form.message}
+                    />
+                  </div>
+                  {/* Submit button */}
                   <div>
                     <button
                       type="submit"
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      onClick={onsubmit}
                     >
-                      Send Message
+                      {isLoading?"Sending...":"Submit"}
                     </button>
                   </div>
                 </form>
