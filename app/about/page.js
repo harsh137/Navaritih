@@ -57,7 +57,7 @@ export default function About() {
         {
             id: 2,
             title: 'Who can join Navaritih?',
-            content: "Navaritih welcomes all students from School of CS & IT who have a passion for technology, regardless of their academic major."
+            content: "Navaritih welcomes all students who have a passion for technology, regardless of their academic major."
         },
         {
             id: 3,
