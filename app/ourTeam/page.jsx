@@ -31,8 +31,8 @@ const Page = () => {
       role: 'Backend Developer',
       imageUrl: '/Js_Ajs/PROGRAMMING/Chandu.N.jpg',
       github:'https://github.com/Chandu5777',
-      linkedIn:"",
-      Instagram:""
+      linkedIn:"https://www.linkedin.com/in/chandu-nagesh-793b21260/",
+      Instagram:"https://www.instagram.com/_artistic_mdz_/"
 
     },
     {
@@ -83,7 +83,7 @@ const Page = () => {
 
     },
     {
-      name: 'Divya Rishab',
+      name: 'Divya Rishabh',
       role: 'Secretary',
       imageUrl:
         '/secretary/Rishab.jpg',
@@ -623,14 +623,14 @@ const Page = () => {
 
       {/* HERO SECTION */}
       <section title="Founder" className="h-auto   pt-16" >
-        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white   mb-4 ">Founder Forewords</h2>
+        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white   mb-4 ">Founder Foreword</h2>
         <div className="flex md:flex-row sm:flex-col   items-center p-4 sm:p-6  dark:border-gray-700 ">
           <img className="object-cover w-1/3 rounded-xl aspect-square sm:size-72 mb-4" src="/Founder/Sanjeev Sir.jpg" alt="" />
           <div className="md:ml-10 sm:ml-0 sm:mb-10 w-full border rounded-lg border-white  p-5">  
             <h1 className="mt-4 text-2xl  font-semibold text-white  font-Baskervville  text-center ">Dr. Sanjeev Kumar Mandal</h1>
 
             <p className="mt-2 text-center text-white capitalize text-wrap sm:text-clip    ">
-            &ldquo;Naviritih at Jain (Deemed-To-Be) University , where the essence of innovation finds its home . As a student- led forum , Naviritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
+            &ldquo;Navaritih at Jain (Deemed-To-Be University) , where the essence of innovation finds its home . As a student- led forum , Navaritih embodies the spirit of exploration and progress , all while carrying the profound meaning of “Innovation “ in Sanskrit . Our motive is to provide researchers and innovators a nurturing environment for them to exchange ideas, discovering new technologies and embark on practical projects. Our student council  possessing a relentless spark , have united their talents to ignite a brighter future.&ldquo; <br /><br /><sanp className="text-lg font-Poppins">&ldquo;I welcome you all to be a part of this exciting journey where technology ignites the world.&ldquo;</sanp>
             </p>
 
             <div className="flex justify-center mt-3 -mx-2">
@@ -767,7 +767,7 @@ const Page = () => {
           <h1 className="text-center font-Baskervville   font-bold text-4xl md:pb-2  text-white  mb-4 "> Our Council</h1>
 
           <p className="max-w-2xl mx-auto mb-2 text-xl text-center text-gray-500 dark:text-gray-300">
-            Our Council Consist of multiple Department.
+            Our Council Consist of Multiple Department.
           </p>
 
 

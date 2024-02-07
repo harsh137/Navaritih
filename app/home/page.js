@@ -83,7 +83,7 @@ export default function Home() {
                 <div className='h-2/4   bg-white w-[100%] rounded-3xl  m-2 ease-in-out '>
                     <div className='items-center flex-col text-center border-2 border-yellow-200 rounded-3xl p-2'>
                         <p className=' items-center justify-center font-Baskervville  font-bold text-3xl pb-2 text-[#02256B]'>Overview</p>
-                        <p><span className='text-wrap text-center text-black'>At Jain (Deemed-to-be) University, we recognize the importance of  fostering a dynamic and innovative
+                        <p><span className='text-wrap text-center text-black'>At Jain (Deemed-to-be University), we recognize the importance of  fostering a dynamic and innovative
                             learning environment for our students. We believe that students should have the opportunity to
                             explore and follow their passion for  technology beyond the confines of their academic
                             curriculum. To this end, we propose the establishment of the forum Navaritih (Innovation)
