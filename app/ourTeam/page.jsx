@@ -623,7 +623,7 @@ const Page = () => {
 
       {/* HERO SECTION */}
       <section title="Founder" className="h-auto   pt-16" >
-        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white   mb-4 ">Founder's Forewords</h2>
+        <h2 className="text-center font-Protest   font-bold text-5xl border-spacing-1 md:pb-2  text-white   mb-4 ">Founder's Foreword</h2>
         <div className="flex md:flex-row sm:flex-col   items-center p-4 sm:p-6  dark:border-gray-700 ">
           <img className="object-cover w-1/3 rounded-xl aspect-square sm:size-72 mb-4" src="/Founder/Sanjeev Sir.jpg" alt="" />
           <div className="md:ml-10 sm:ml-0 sm:mb-10 w-full border rounded-lg border-white  p-5">  
