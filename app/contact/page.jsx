@@ -31,10 +31,12 @@ const validatePhone=()=>{
       
       if (!validateEmail()) {
           alert('Invalid email address');
+          setIsLoading(false)
           return;
       }
       if (!validatePhone()) {
         alert('Invalid Phone Number');
+        setIsLoading(false)
         return;
     }
       try{
@@ -64,6 +66,13 @@ const validatePhone=()=>{
       catch(error){
         console.log(error)
       }
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      
+      })
       setIsLoading(false);
 
   }
@@ -228,7 +237,7 @@ const validatePhone=()=>{
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
                       onClick={onsubmit}
                     >
-                      {isLoading?"Sending...":"Submit"}
+                      {isLoading?<span className="loading loading-dots loading-lg"></span>:"Submit"}
                     </button>
                   </div>
                 </form>

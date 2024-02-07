@@ -32,7 +32,7 @@ export default function Home() {
             id: 4,
             title: "CRYPTOQUEST",
             description: "Introducing CryptoQuest, a dynamic 2-day event by our Cybersecurity Team! Day 1 features an exclusive session with a cybersecurity expert, immersive workshops, live demos, and networking. Day 2 brings a steganography contest to test cryptographic skills. Join us on 27TH & 28TH February 2024 at Conference Hall 3, 2ND Floor, JAIN (Deemed-to-be University), for an unforgettable experience where knowledge meets innovation",
-            date: "27 & 28 February 2024"
+            date: "20 & 21 February 2024"
         },
     ]
     )
