@@ -12,10 +12,11 @@ export async function POST(req) {
         port: 465,
         secure: true,
         auth: {
-        user: 'navaritih.ju@gmail.com',
-        pass: 'mwfe jlqo bqoh gzll'
+        user: process.env.EMAIL,
+        pass: process.env.PASS
         }
     })
+    // console.log(process.env.EMAIL)
     const mailOptions = {
         to: 'navaritih.ju@gmail.com',
         subject: `New Query from ${name}`,
